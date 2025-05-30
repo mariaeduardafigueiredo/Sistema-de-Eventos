@@ -1,0 +1,177 @@
+body {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #d6d6d6;
+  }
+  h1{
+    font-size: 25px;
+  }
+  
+  header {
+    background-color: #6f00ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fiLL, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .evento {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+  }
+  
+  .evento h2 {
+    margin: 0;
+  }
+  
+  .evento p {
+    margin: 5px 0;
+  }
+  
+  button {
+    background-color: #000000;    /* Cor de fundo verde */
+    color: white;                 /* Cor da fonte branca */
+    border: none;                 /* Sem borda */
+    padding: 10px;                /* Espaçamento interno */
+    width: 100%;                  /* Largura total do container */
+    border-radius: 5px;           /* Cantos arredondados */
+    cursor: pointer;             /* Muda o cursor ao passar */
+    font-weight: bold;           /* Deixa o texto em negrito */
+    font-size: 14px;             /* Tamanho da fonte */
+    text-align: center;
+    margin-top: 20px;          /* Centraliza o texto */
+  }
+  
+  button:hover {
+    background-color: #4306d1;   /* Cor ao passar o mouse */
+  }
+  
+  
+  .container-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;     /* Centraliza horizontalmente */
+    gap: 30px;                   /* Espaço entre os cards */
+    padding: 20px 0;
+    font-size: 12px;
+  }
+  .button-onclick{
+     color: white;
+    border: none;
+    padding: 10px;
+    width: 1000%; /* ou 100%, depende da largura do card */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto 0 auto; /* centraliza horizontalmente */
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+      }
+      .button onclick="comprar{
+
+      }
+     
+    .evento {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;                /* Largura fixa */
+    box-sizing: border-box;
+  }
+
+  .carrossel-eventos {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  .evento-card {
+    min-width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  .evento-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 120px;
+  }
+  
+  .evento-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  /* .carrossel-eventos::-webkit-scrollbar {
+    display: none;
+  } */
+  .feedbacks {
+    padding: 40px 40px;
+    background-color: #d6d6d6;
+    text-align: center;
+  }
+  
+  .feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+  }
+  
+  .feedback-card {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-style: italic;
+  }
+  .feedback-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+  }
+
+  .carrinho {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #2900df;
+    border-radius: 10px;
+    width: 300px;
+    z-index: 999;
+  }
+  
+  

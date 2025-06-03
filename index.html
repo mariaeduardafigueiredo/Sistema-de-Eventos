@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema de Eventos</title>
-  <button onclick="abrirCarrinho()">🛒 Carrinho (<span id="total-carrinho">0</span>)</button>
+  <!-- <button onclick="abrirCarrinho()">🛒 Carrinho (<span id="total-carrinho">0</span>)</button> -->
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
   <header>
+  
     <h1>Eventos Culturais</h1>
     <input type="text" id="busca" placeholder="Buscar eventos...">
   </header>
+  <button id="botao-carrinho" onclick="abrirCarrinho()">🛒 Carrinho (<span id="total-carrinho">0</span>)</button>
   <div class="button-onclick" id="comprar">
   </div>
 
+
 <div class="container-eventos" id="eventos">
 </div>
+<!-- <button id="botao-carrinho" onclick="abrirCarrinho()">🛒 Carrinho (<span id="total-carrinho">0</span>)</button> -->
+
 
 <section class="feedbacks">
     <h2>Feedback</h2>
@@ -25,10 +28,6 @@
         <p>"O festival de música foi incrível! Ótima vibe e bem organizado."</p>
         <span>Maria Silva</span>
       </div>
-      <!-- <div class="feedback-card">
-        <p>"Adorei a feira de artesanato. Comprei lindos artesanatos!"</p>
-        <span>João Pem reira</span>
-      </div> -->
       <div class="feedback-card">
         <p>"Participar da exposição de arte foi uma experiência maravilhosa! As obras estavam incríveis e o ambiente super acolhedor."</p>
         <span>Ana Costa</span>
@@ -39,12 +38,13 @@
       </div>
     </div>
     <div id="carrinho" class="carrinho">
-        <h2>Carrinho de Compras</h2>
-        <ul id="lista-carrinho"></ul>
-        <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
-        <button onclick="finalizarCompra()">Finalizar Compra</button>
-        <button onclick="fecharCarrinho()">Fechar</button>
-      </div>
+      <h2>Carrinho de Compras</h2>
+      <ul id="lista-carrinho"></ul>
+      <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+      <button onclick="fecharCarrinho()">Fechar</button>
+    </div>
+
   <script src="script.js"></script>
 </body>
 </html>

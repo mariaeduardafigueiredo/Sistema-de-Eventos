@@ -203,3 +203,30 @@ function finalizarCompra() {
   atualizarCarrinho();
   fecharCarrinho();
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const botoesComprar = document.querySelectorAll('.botao-comprar');
+  const formulario = document.getElementById('formulario-compra');
+
+  botoesComprar.forEach(botao => {
+    botao.addEventListener('click', () => {
+      formulario.style.display = 'block';
+    });
+  });
+
+  document.getElementById("formPagamento").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Captura simples dos dados preenchidos
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const pagamento = document.getElementById("pagamento").value;
+
+    alert(`Compra realizada com sucesso!\n\nNome: ${nome}\nEmail: ${email}\nPagamento: ${pagamento}`);
+    
+    // Esconde o formulário após envio
+    formulario.style.display = 'none';
+
+    // Limpa os campos
+    this.reset();
+  });
+});

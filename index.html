@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Botão de exemplo para teste -->
   <title>Sistema de Eventos</title>
   <!-- <button onclick="abrirCarrinho()">🛒 Carrinho (<span id="total-carrinho">0</span>)</button> -->
   <link rel="stylesheet" href="style.css">
   <header>
-  
+  <!-- Botão de exemplo para teste -->
+<!-- <button class="botao-comprar">Comprar Ingresso</button> -->
+
     <h1>Eventos Culturais</h1>
     <input type="text" id="busca" placeholder="Buscar eventos...">
   </header>
@@ -41,10 +44,34 @@
       <h2>Carrinho de Compras</h2>
       <ul id="lista-carrinho"></ul>
       <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
-      <button onclick="finalizarCompra()">Finalizar Compra</button>
+      <!-- <button onclick="finalizarCompra()">Finalizar Compra</button> -->
+      <button class="botao-comprar">Comprar Ingresso</button>
       <button onclick="fecharCarrinho()">Fechar</button>
     </div>
+   <!-- Formulário de Compra -->
+<div id="formulario-compra" class="form-container" style="display: none;">
+  <h3>Finalizar Compra</h3>
+  <form id="formPagamento">
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br><br>
 
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br><br>
+
+    <label for="pagamento">Forma de pagamento:</label><br>
+    <select id="pagamento" name="pagamento" required>
+      <option value="">Selecione</option>
+      <option value="pix">Pix</option>
+      <option value="cartao">Cartão de Crédito</option>
+      <option value="boleto">Boleto</option>
+    </select><br><br>
+
+    <button type="submit">Confirmar Pagamento</button>
+  </form>
+</div>
+
+
+<link rel="stylesheet" href="finalizada.html">
   <script src="script.js"></script>
 </body>
 </html>

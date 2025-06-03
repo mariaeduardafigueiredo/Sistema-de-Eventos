@@ -208,5 +208,39 @@ body {
   .carrinho.aberto {
     right: 0;
   }
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;         /* Alinha o texto do label à esquerda */
+    text-justify: inter-word; /* Justifica o texto (funciona melhor em blocos maiores) */
+  }
   
+  .form-container input,
+  .form-container select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: left;         /* Alinha o texto digitado à esquerda */
+  }
+  
+  .form-container {
+    text-align: justify;       /* Justifica o conteúdo do container */
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .form-container button:hover {
+    background-color: #370062;
+  }  
   
